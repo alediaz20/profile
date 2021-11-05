@@ -16,7 +16,7 @@
 </head>
 
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini"  style="overflow-x: hidden;">
   <!-- tsParticles container --> 
 <div class="wrapper">
     <!-- Navbar -->
@@ -27,7 +27,7 @@
         </li>
     </nav>
     <!-- Menu Lateral -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed"  style="overflow: hidden;">
       <div class="sidebar">
         <web-particles id="tsparticles" options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":true,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#ffffff","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'>   
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -74,7 +74,7 @@
             </li>
           </ul>
         </nav>
-        </web-particles>
+        </web-particles>  
       </div>
     </aside>
     
@@ -93,18 +93,18 @@
             <hr><strong><i class="fas fa-map-marker-alt mr-1"></i> Lugar de Residencia</strong><p class="text-muted">Gualeguaychýu, Entre Rios, Argentina</p><hr>
             <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
             <p class="text-muted" style="font-size:45px;">
-              <span class="tag tag-danger text-info" title="PHP"><i class="fab fa-php"></i></span>
-              <span class="tag tag-success text-info" title="CSS"><i class="fab fa-css3"></i></span>
-              <span class="tag tag-warning text-info" title="HTML"><i class="fab fa-html5"></i></span>
-              <span class="tag tag-info text-info" title="JavaScript"><i class="fab fa-js-square"></i></span>
-              <span class="tag tag-info text-info" title="MySQL"><i class="fas fa-database"></i></span>
+              <span class="tag tag-danger text-primary" title="PHP"><i class="fab fa-php"></i></span>
+              <span class="tag tag-success text-primary" title="CSS"><i class="fab fa-css3"></i></span>
+              <span class="tag tag-warning text-primary" title="HTML"><i class="fab fa-html5"></i></span>
+              <span class="tag tag-info text-primary" title="JavaScript"><i class="fab fa-js-square"></i></span>
+              <span class="tag tag-info text-primary" title="MySQL"><i class="fas fa-database"></i></span>
             </p>
           </div>
         </div>
       </div>
-      <div class="card-deck">
-        <div class="card border-info mb-3">
-          <div class="card-header text-info">
+      <div class="card-deck" style="justify-content: space-around">
+        <div class="card-borderless">
+          <div class="card-header text-primary">
             <h3 class="card-title"><strong><i class="fas fa-user-graduate"></i> Formación</strong></h3>
           </div>
           <div class="card-body">
@@ -112,8 +112,8 @@
               <p class="text-muted">Técnico superior en Análisis y Desarrollo de Software - Insituto del profesorado Sedes Sapientiae</p>
           </div>
         </div>
-        <div class="card border-info mb-3">
-          <div class="card-header text-info">
+        <div class="card-borderless">
+          <div class="card-header text-primary">
             <h3 class="card-title"><i class="fas fa-briefcase"></i><strong> Experiencia Laboral</strong></h3>
           </div>
           <div class="card-body">
@@ -138,7 +138,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
   <!-- REQUIRED SCRIPTS -->
   <!-- jQuery -->
@@ -156,4 +155,5 @@
   <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"></script>
 </body>
+</div>
 </html>
